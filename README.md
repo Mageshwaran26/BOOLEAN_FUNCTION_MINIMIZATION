@@ -35,16 +35,38 @@ Hardware – PCs, Cyclone II , USB flasher
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
-
+Developed by:Mageshwaran T.A
+RegisterNumber:212224230146*/
+```
+module booleanfn(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+endmodule
+```
+```
+module booleanfnb(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|(w & y)|(x & y));
+endmodule
+```
 
 **RTL realization**
 
+![image](https://github.com/user-attachments/assets/0a2b3b64-923d-418e-8c57-987b20bd8dec)
+
 **Output:**
 
-**RTL**
+![image](https://github.com/user-attachments/assets/a34d0804-8843-4287-9fdf-dee3df0d9e0f)
+
+
+
 
 **Timing Diagram**
+
+![image](https://github.com/user-attachments/assets/952f8f94-013c-480b-85ab-8d1f8d0ec8d3)
+
 
 **Result:**
 
